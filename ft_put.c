@@ -6,7 +6,7 @@
 /*   By: sasano <shunkotkg0141@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 19:12:07 by sasano            #+#    #+#             */
-/*   Updated: 2023/10/10 00:42:10 by sasano           ###   ########.fr       */
+/*   Updated: 2023/10/19 22:33:49 by sasano           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ int	ft_putnbr_unsigned(unsigned int nb)
 	return (count);
 }
 
-int	ft_putptr(unsigned long long ptr, const char format)
+int	ft_putptr(uintptr_t ptr, const char format)
 {
 	int count;
 

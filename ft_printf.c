@@ -6,7 +6,7 @@
 /*   By: sasano <shunkotkg0141@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 12:31:23 by sasano            #+#    #+#             */
-/*   Updated: 2023/10/10 00:50:08 by sasano           ###   ########.fr       */
+/*   Updated: 2023/10/19 23:05:27 by sasano           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	check_format(va_list args, const char format)
 	else if (format == 'p')
 	{
 		count += ft_putstr("0x");
-		count += ft_putptr(va_arg(args, unsigned long long), 'x');
+		count += ft_putptr(va_arg(args, uintptr_t), 'x');
 	}
 	else if (format == 'd' || format == 'i')
 		count += ft_putnbr(va_arg(args, int));
@@ -65,7 +65,7 @@ int	ft_printf(const char *format, ...)
 	va_end(args);
 	return (count);
 }
-/* 
+/*
 int	main(void)
 {
 	// ft_printf("Hello, %s\n", "world!");
