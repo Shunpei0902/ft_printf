@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sasano <shunkotkg0141@gmail.com>           +#+  +:+       +#+        */
+/*   By: sasano <sasano.stu>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 12:31:23 by sasano            #+#    #+#             */
-/*   Updated: 2023/10/19 23:05:27 by sasano           ###   ########.fr       */
+/*   Updated: 2023/11/10 03:01:40 by sasano           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,6 @@ int	ft_printf(const char *format, ...)
 		{
 			i++;
 			count += check_format(args, format[i]);
-			if (!(format[i] == '%'))
-				va_arg(args, void *);
 		}
 		else
 		{
@@ -78,12 +76,20 @@ int	main(void)
 	// ft_printf("Hello, %x\n", 42);
 	// ft_printf("Hello, %X\n", 42);
 	// ft_printf("Hello, %%\n");
-	// ft_printf(" %c %c %c ", '0', 0, '1');
-	// ft_printf(" %c %c %c ", ' ', ' ', ' ');
-	// ft_printf(" %c %c %c ", '1', '2', '3');
-	// ft_printf(" %c %c %c ", '2', '1', 0);
-	// ft_printf(" %c %c %c ", 0, '1', '2');
+	// ft_printf("%c!%c!%c\n", '0', 0, '1');
+	// ft_printf("%c!%c!%c\n", ' ', ' ', ' ');
+	// ft_printf("%c!%c!%c\n", '1', '2', '3');
+	// ft_printf("%c!%c!%c\n", '2', '1', 0);
+	// ft_printf("%c!%c!%c\n", 0, '1', '2');
 	// ft_printf(" NULL %s NULL ", NULL);
-	ft_printf("%%%c",'A');
+	// ft_printf("%%\n");
+	// ft_printf("%%%c\n", 'A');
+	// ft_printf("%%%a\n");
+	// printf("%5%\n");
+	// printf("taaa %5s\n", "hello");
+	// printf("taaa %as\n", "hello");
+	printf("%%-5.3s LYDI == |%-5.3s|\n", "LYDI");
+	ft_printf("%%-5.3s LYDI == |%-5.3s|\n", "LYDI");
+	// ft_printf("%5%\n");
 	return (0);
 } */

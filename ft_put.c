@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_put.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sasano <shunkotkg0141@gmail.com>           +#+  +:+       +#+        */
+/*   By: sasano <sasano.stu>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 19:12:07 by sasano            #+#    #+#             */
-/*   Updated: 2023/10/19 22:33:49 by sasano           ###   ########.fr       */
+/*   Updated: 2023/11/10 01:39:13 by sasano           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ int	ft_putnbr_unsigned(unsigned int nb)
 
 int	ft_putptr(uintptr_t ptr, const char format)
 {
-	int count;
+	int	count;
 
 	count = 0;
 	if (ptr >= 16)

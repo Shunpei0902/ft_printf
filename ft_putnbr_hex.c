@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_hex.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sasano <shunkotkg0141@gmail.com>           +#+  +:+       +#+        */
+/*   By: sasano <sasano.stu>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 19:31:24 by sasano            #+#    #+#             */
-/*   Updated: 2023/10/09 20:12:09 by sasano           ###   ########.fr       */
+/*   Updated: 2023/10/19 23:28:44 by sasano           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_putnbr_hex(unsigned int nb, const char format)
 {
-	int count;
+	int	count;
 
 	count = 0;
 	if (nb >= 16)
