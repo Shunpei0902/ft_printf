@@ -6,13 +6,13 @@
 /*   By: sasano <sasano.stu>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 19:12:07 by sasano            #+#    #+#             */
-/*   Updated: 2023/11/10 01:39:13 by sasano           ###   ########.fr       */
+/*   Updated: 2023/11/17 18:44:39 by sasano           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putchar(char c)
+int	ft_putchar(unsigned char c)
 {
 	write(1, &c, 1);
 	return (1);
